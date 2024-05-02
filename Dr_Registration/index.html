@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div class="container1">
+<div class="container">
+    <img src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Doctor Image">
+    <div class="form-container">
+        <h2>Doctor Registration Form</h2>
+        <form action="/submit_doctor_registration.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization" required>
+
+            <label for="clinic_address">Clinic Address:</label>
+            <input type="text" id="clinic_address" name="clinic_address" required>
+
+            <label for="clinic_hours">Clinic Hours:</label>
+            <input type="text" id="clinic_hours" name="clinic_hours" required>
+
+            <label for="qualifications">Qualifications:</label>
+            <input type="text" id="qualifications" name="qualifications" required>
+
+            <label for="license">License:</label>
+            <input type="text" id="license" name="license" required>
+
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label for="languages_spoken">Languages Spoken:</label>
+            <input type="text" id="languages_spoken" name="languages_spoken" required>
+
+            <label for="payment_info">Payment Information:</label>
+            <input type="text" id="payment_info" name="payment_info" required>
+
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" name="availability" required>
+
+            <label for="profile_picture">Profile Picture:</label>
+            <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required>
+
+            <label for="registration_number">Registration Number:</label>
+            <input type="text" id="registration_number" name="registration_number" required>
+
+            <label for="terms_conditions">Terms and Conditions:</label>
+            <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+            <span>I agree to the terms and conditions</span>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
