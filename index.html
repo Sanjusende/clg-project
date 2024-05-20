@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Profile</h1>
+    <form class="form_container" action="/submit_profile" method="POST">
+        <fieldset class="Personal_Info">
+            <img src="" alt="">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="contact_number">Contact Number:</label>
+            <input type="tel" id="contact_number" name="contact_number" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+        </fieldset>
+
+        <div class="field_Container">
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="profile_picture">Profile Picture:</label>
+            <input type="file" id="profile_picture" name="profile_picture"><br><br>
+        </fieldset>
+
+       
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="payment_method">Preferred Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="net_banking">Net Banking</option>
+            </select><br><br>
+
+            <label for="billing_info">Billing Information:</label>
+            <textarea id="billing_info" name="billing_info" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Appointment Information</legend>
+            <label for="upcoming_appointments">Upcoming Appointments:</label>
+            <textarea id="upcoming_appointments" name="upcoming_appointments" required></textarea><br><br>
+
+            <label for="past_appointments">Past Appointments:</label>
+            <textarea id="past_appointments" name="past_appointments" required></textarea><br><br>
+
+            <label for="appointment_reminders">Appointment Reminders:</label>
+            <textarea id="appointment_reminders" name="appointment_reminders" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order History (for pharmacy)</legend>
+            <label for="past_orders">Past Orders:</label>
+            <textarea id="past_orders" name="past_orders" required></textarea><br><br>
+
+            <label for="order_tracking">Order Tracking:</label>
+            <textarea id="order_tracking" name="order_tracking" required></textarea><br><br>
+
+            <label for="refill_reminders">Refill Reminders:</label>
+            <textarea id="refill_reminders" name="refill_reminders" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Communication Preferences</legend>
+            <label for="notification_settings">Notification Settings:</label>
+            <textarea id="notification_settings" name="notification_settings" required></textarea><br><br>
+
+            <label for="language_preferences">Language Preferences:</label>
+            <textarea id="language_preferences" name="language_preferences" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <label for="emergency_contact_name">Emergency Contact Name:</label>
+            <input type="text" id="emergency_contact_name" name="emergency_contact_name" required><br><br>
+
+            <label for="emergency_contact_relationship">Relationship:</label>
+            <input type="text" id="emergency_contact_relationship" name="emergency_contact_relationship" required><br><br>
+
+            <label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+            <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" required><br><br>
+        </fieldset>
+    
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
